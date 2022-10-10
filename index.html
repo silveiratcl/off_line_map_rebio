@@ -73,6 +73,7 @@
         function setBounds() {
             map.setMaxBounds(map.getBounds());
         }
+
         map.createPane('pane_rebio_map_0');
         map.getPane('pane_rebio_map_0').style.zIndex = 400;
         var layer_rebio_map_0 = L.tileLayer('images/mosaico_tiles/{z}/{x}/{y}.png', {
@@ -103,13 +104,6 @@
                 mouseover: highlightFeature,
             });
 
-
-
-
-
-
-
-
             var popupContent = '<table>\
                     <tr>\
                         <th scope="row">fid</th>\
@@ -129,9 +123,9 @@
                 opacity: 1,
                 color: 'rgba(255,158,23,1.0)',
                 dashArray: '',
-                lineCap: 'square',
+                lineCap: 'round',
                 lineJoin: 'bevel',
-                weight: 1.0,
+                weight: 6.0,
                 fillOpacity: 0,
                 interactive: true,
             }
